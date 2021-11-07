@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using Server.Models;
+using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
+using System.Linq;
 using System.Web.Http;
 using HttpDeleteAttribute = System.Web.Http.HttpDeleteAttribute;
 using HttpGetAttribute = System.Web.Http.HttpGetAttribute;
@@ -9,11 +12,12 @@ namespace Server.Controllers
 {
     public class OthersController : ApiController
     {
+        Model1 db = new Model1();
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public ResultCNFromPBCV GetCNFromPBCV()
         {
-            return new string[] { "value1", "value2" };
+            return db.Database.SqlQuery<ResultCNFromPBCV>("exec [dbo].[CNFromPBCV]").FirstOrDefault();
         }
 
         // GET api/values/5
