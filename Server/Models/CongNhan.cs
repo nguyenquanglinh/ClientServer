@@ -9,6 +9,12 @@ namespace Server.Models
     [Table("CongNhan")]
     public partial class CongNhan
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public CongNhan()
+        {
+            CongNhanThucHienKhoans = new HashSet<CongNhanThucHienKhoan>();
+        }
+
         [Key]
         [StringLength(20)]
         public string MaCongNhan { get; set; }
@@ -35,5 +41,8 @@ namespace Server.Models
         public string LuongBaoHiem { get; set; }
 
         public bool? GioiTinh { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CongNhanThucHienKhoan> CongNhanThucHienKhoans { get; set; }
     }
 }

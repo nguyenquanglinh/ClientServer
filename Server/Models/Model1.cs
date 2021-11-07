@@ -1,6 +1,6 @@
 using System;
-using System.Data.Entity;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
 using System.Linq;
 
 namespace Server.Models
@@ -8,11 +8,12 @@ namespace Server.Models
     public partial class Model1 : DbContext
     {
         public Model1()
-            : base("name=Model1")
+            : base("name=Model11")
         {
         }
 
         public virtual DbSet<CongNhan> CongNhans { get; set; }
+        public virtual DbSet<CongNhanThucHienKhoan> CongNhanThucHienKhoans { get; set; }
         public virtual DbSet<CongViec> CongViecs { get; set; }
         public virtual DbSet<DanhMucCongNhanThucHienKhoan> DanhMucCongNhanThucHienKhoans { get; set; }
         public virtual DbSet<DanhMucCongViec> DanhMucCongViecs { get; set; }
@@ -26,6 +27,21 @@ namespace Server.Models
                 .IsFixedLength()
                 .IsUnicode(false);
 
+            modelBuilder.Entity<CongNhan>()
+                .HasMany(e => e.CongNhanThucHienKhoans)
+                .WithRequired(e => e.CongNhan)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<CongNhanThucHienKhoan>()
+                .Property(e => e.MaDanhMucCNTHK)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<CongNhanThucHienKhoan>()
+                .Property(e => e.MaCongNhan)
+                .IsFixedLength()
+                .IsUnicode(false);
+
             modelBuilder.Entity<CongViec>()
                 .Property(e => e.MaCongViec)
                 .IsFixedLength()
@@ -35,6 +51,11 @@ namespace Server.Models
                 .Property(e => e.MaDanhMucCNTHK)
                 .IsFixedLength()
                 .IsUnicode(false);
+
+            modelBuilder.Entity<DanhMucCongNhanThucHienKhoan>()
+                .HasMany(e => e.CongNhanThucHienKhoans)
+                .WithRequired(e => e.DanhMucCongNhanThucHienKhoan)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<DanhMucCongViec>()
                 .Property(e => e.MaDanhMucCongViec)
