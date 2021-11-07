@@ -163,6 +163,12 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\CongNhanThucHienKhoansController.cs" />
+    <Compile Include="Controllers\OthersController.cs" />
+    <Compile Include="Controllers\SanPhamsController.cs" />
+    <Compile Include="Controllers\NKSLKsController.cs" />
+    <Compile Include="Controllers\DanhMucCongViecsController.cs" />
+    <Compile Include="Controllers\DanhMucCongNhanThucHienKhoansController.cs" />
     <Compile Include="Controllers\CongNhansController.cs" />
     <Compile Include="Controllers\CongViecsController.cs" />
     <Compile Include="Global.asax.cs">
