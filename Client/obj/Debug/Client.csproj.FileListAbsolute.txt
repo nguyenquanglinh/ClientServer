@@ -49,7 +49,6 @@ C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\bin\System.Web.WebP
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\bin\Newtonsoft.Json.xml
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\bin\Antlr3.Runtime.pdb
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\obj\Debug\Client.csproj.AssemblyReference.cache
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\obj\Debug\Client.csproj.CopyComplete
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\obj\Debug\Client.dll
