@@ -53,3 +53,4 @@ C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\obj\Debug\Client.cs
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\obj\Debug\Client.csproj.CopyComplete
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\obj\Debug\Client.dll
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\obj\Debug\Client.pdb
+C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Client\obj\Debug\Client.csproj.AssemblyReference.cache
