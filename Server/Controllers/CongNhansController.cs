@@ -24,7 +24,7 @@ namespace Server.Controllers
         [HttpGet]
         public CongNhan Get(string id)
         {
-            return db.CongNhans.FirstOrDefault(i => i.MaCongNhan == id);
+            return db.CongNhans.FirstOrDefault(i => i.MaCongNhan.Trim() == id);
         }
 
         // POST api/values
