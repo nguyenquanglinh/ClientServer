@@ -125,7 +125,6 @@ C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Server\bin\System.Web.WebP
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Server\bin\System.Web.WebPages.Razor.xml
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Server\bin\Antlr3.Runtime.pdb
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Server\obj\Debug\Server.csproj.AssemblyReference.cache
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Server\obj\Debug\Server.csproj.CopyComplete
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\Server\obj\Debug\Server.dll
