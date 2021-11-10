@@ -54,3 +54,11 @@ C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\BTLClientServer\obj\Debug\
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\BTLClientServer\obj\Debug\BTLClientServer.csproj.CopyComplete
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\BTLClientServer\obj\Debug\BTLClientServer.dll
 C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\BTLClientServer\obj\Debug\BTLClientServer.pdb
+C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\BTLClientServer\bin\EntityFramework.dll
+C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\BTLClientServer\bin\EntityFramework.SqlServer.dll
+C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\BTLClientServer\bin\EntityFramework.xml
+C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\BTLClientServer\bin\EntityFramework.SqlServer.xml
+C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\BTLClientServer\bin\PagedList.dll
+C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\BTLClientServer\bin\PagedList.Mvc.dll
+C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\BTLClientServer\bin\PagedList.xml
+C:\Users\thang\OneDrive\Documents\GitHub\ClientServer\BTLClientServer\bin\PagedList.Mvc.xml

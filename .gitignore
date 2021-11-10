@@ -80,3 +80,16 @@ BTLClientServer/obj/Debug/BTLClientServer.pdb
 BTLClientServer/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 BTLClientServer/Views/Home/About.cshtml
 BTLClientServer/Views/Home/Contact.cshtml
+BTLClientServer/bin/EntityFramework.dll
+BTLClientServer/bin/EntityFramework.SqlServer.dll
+BTLClientServer/bin/EntityFramework.SqlServer.xml
+BTLClientServer/bin/EntityFramework.xml
+BTLClientServer/bin/PagedList.dll
+BTLClientServer/bin/PagedList.Mvc.dll
+BTLClientServer/bin/PagedList.Mvc.xml
+BTLClientServer/bin/PagedList.xml
+BTLClientServer/obj/Debug/BTLClientServer.csproj.CoreCompileInputs.cache
+BTLClientServer/obj/Debug/BTLClientServer.csproj.FileListAbsolute.txt
+BTLClientServer/obj/Debug/BTLClientServer.dll
+BTLClientServer/obj/Debug/BTLClientServer.pdb
+BTLClientServer/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
