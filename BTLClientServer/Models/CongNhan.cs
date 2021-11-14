@@ -22,6 +22,7 @@ namespace BTLClientServer.Models
         [StringLength(50)]
         public string HoTen { get; set; }
 
+        [DataType(DataType.Date)]
         [Column(TypeName = "date")]
         public DateTime? NgayThangNamSinh { get; set; }
 
