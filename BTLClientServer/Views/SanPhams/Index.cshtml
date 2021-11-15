@@ -1,0 +1,82 @@
+﻿@model IEnumerable<BTLClientServer.Models.SanPham>
+
+@{
+    ViewBag.Title = "Sản phẩm";
+}
+
+<h2>Danh sách sản phẩm</h2>
+
+<p>
+    @Html.ActionLink("Tạo mới", "Create")
+</p>
+<table class="table table-bordered table-hover">
+    <tr>
+        
+        <th>
+            @*@Html.DisplayNameFor(model => model.TenSanPham)*@
+            Tên sản phẩm
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.SoDangKy)*@
+            Số đăng ký
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.HanSuDung)*@
+            Hạn sử dụng
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.QuyCach)*@
+            Quy cách
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.NgayDangKy)*@
+            Ngày đăng ký
+        </th>
+        
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.TenSanPham)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoDangKy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HanSuDung)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuyCach)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgayDangKy)
+            </td>
+            
+            <td>
+                <a href="~/Admin/SanPham/Edit/@item.MaSanPham"> Chỉnh sửa |</a>
+                <a href="~/Admin/SanPham/Details/@item.MaSanPham"> Chi tiết |</a>
+                <a href="~/Admin/SanPham/Delete/@item.MaSanPham"> Xóa</a>
+
+                @*@Html.ActionLink("Sửa", "Edit", new { id=item.MaSanPham }) |
+                    @Html.ActionLink("Chi tiết", "Details", new { id=item.MaSanPham }) |
+                    @Html.ActionLink("Xóa", "Delete", new { id=item.MaSanPham })*@
+            </td>
+        </tr>
+    }
+
+</table>
+<form>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            @for (int i = 0; i < ViewBag.tongTrang; i++)
+            {
+                <li class="page-item"><a class="page-link" href="@Url.Action("Index","SanPhams",new { index = i })">@(i+1)</a></li>
+            }
+        </ul>
+    </nav>
+</form>
+
