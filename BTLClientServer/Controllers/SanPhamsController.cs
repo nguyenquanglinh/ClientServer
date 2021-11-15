@@ -14,7 +14,7 @@ namespace BTLClientServer.Controllers
 {
     public class SanPhamsController : Controller
     {
-        // GET: CongNhans
+        // GET: SanPhams
         Model1 db = new Model1();
         //private object sanPhams;
 
@@ -31,7 +31,7 @@ namespace BTLClientServer.Controllers
         //}
         public ActionResult Index(int pageNumber = 1, int pageSize = 10)
         {
-            return View(db.CongNhans.OrderBy(i => i.MaCongNhan).ToPagedList(pageNumber, pageSize));
+            return View(db.SanPhams.OrderBy(i => i.MaSanPham).ToPagedList(pageNumber, pageSize));
         }
     
 
