@@ -1,0 +1,54 @@
+﻿@model ProjectClientServer.Models.CongNhanThucHienKhoan
+
+@{
+    ViewBag.Title = "Chi tiết thông tin công nhân thực hiện khoán";
+}
+
+<h2>Chi tiết thông tin công nhân thực hiện khoán</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @*@Html.DisplayNameFor(model => model.CongNhan.HoTen)*@
+            Họ và tên công nhân
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CongNhan.HoTen)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.DanhMucCongNhanThucHienKhoan.MaDanhMucCNTHK)*@
+            Danh mục thực hiện khoán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DanhMucCongNhanThucHienKhoan.MaDanhMucCNTHK)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.ThoiGianBatDau)*@
+            Thời gian bắt đầu
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGianBatDau)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.ThoiGianKetThuc)*@
+            Thời gian kết thúc
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGianKetThuc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Chỉnh sửa", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Quay lại", "Index", "CongNhanThucHienKhoanController", new { @class = "btn btn-primary" })
+</p>

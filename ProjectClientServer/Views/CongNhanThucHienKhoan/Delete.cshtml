@@ -1,0 +1,61 @@
+﻿@model ProjectClientServer.Models.CongNhanThucHienKhoan
+
+@{
+    ViewBag.Title = "Xóa thông tin công nhân thực hiện khoán";
+}
+
+
+
+<h3>Bạn có chắc chắn muốn xóa thông tin công nhân thực hiện khoán này?</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @*@Html.DisplayNameFor(model => model.CongNhan.HoTen)*@
+            Họ và tên công nhân
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CongNhan.HoTen)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.DanhMucCongNhanThucHienKhoan.MaDanhMucCNTHK)*@
+            Danh mục thực hiện khoán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DanhMucCongNhanThucHienKhoan.MaDanhMucCNTHK)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.ThoiGianBatDau)*@
+            Thời gian bắt đầu
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGianBatDau)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.ThoiGianKetThuc)*@
+            Thời gian kết thúc
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThoiGianKetThuc)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại", "Index", "CongNhanThucHienKhoanController", new { @class = "btn btn-primary" })
+        </div>
+    }
+</div>

@@ -1,0 +1,43 @@
+﻿@model ProjectClientServer.Models.DanhMucCongNhanThucHienKhoan
+
+@{
+    ViewBag.Title = "Xóa danh mục thực hiện khoán";
+}
+
+
+
+<h3>Bạn chắc chắn muốn xóa thông tin này?</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @*@Html.DisplayNameFor(model => model.SoLuong)*@
+            Số lượng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuong)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.LaKhoanChung)*@
+            Là khoán chung?
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LaKhoanChung)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại", "Index", "DanhMucCongNhanThucHienKhoanController", new { @class = "btn btn-primary" })
+        </div>
+    }
+</div>

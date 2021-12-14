@@ -1,0 +1,79 @@
+﻿@model ProjectClientServer.Models.CongViec
+
+@{
+    ViewBag.Title = "Xóa thông tin công việc";
+}
+
+
+
+<h3>Bạn có chắc chắn muốn xóa thông tin công việc này?</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @*@Html.DisplayNameFor(model => model.TenCongViec)*@
+            Tên công việc
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenCongViec)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.DinhMucKhoan)*@
+            Định mức khoán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DinhMucKhoan)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.DonViKhoan)*@
+            Đơn vị khoán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonViKhoan)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.HeSoKhoan)*@
+            Hệ số khoán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeSoKhoan)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.DinhMucLaoDong)*@
+            Định mức lao động
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DinhMucLaoDong)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.DonGia)*@
+            Đơn giá
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DonGia)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Quay lại", "Index", "CongViecController", new { @class = "btn btn-primary" })
+        </div>
+    }
+</div>

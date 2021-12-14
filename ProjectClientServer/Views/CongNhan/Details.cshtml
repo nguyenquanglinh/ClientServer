@@ -1,0 +1,117 @@
+﻿@model ProjectClientServer.Models.CongNhan
+
+@{
+    ViewBag.Title = "Chi tiết thông tin công nhân";
+}
+
+<h2>Chi tiết thông tin công nhân</h2>
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @*@Html.DisplayNameFor(model => model.HoTen)*@
+            Họ và tên công nhân
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoTen)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.NgayThangNamSinh)*@
+            Ngày tháng năm sinh
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayThangNamSinh)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.PhongBan)*@
+            Phòng ban
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhongBan)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.ChucVu)*@
+            Chức vụ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChucVu)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.QueQuan)*@
+            Quê quán
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QueQuan)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.LuongHopDong)*@
+            Lương hợp đồng
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LuongHopDong)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.LuongBaoHiem)*@
+            Lương bảo hiểm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LuongBaoHiem)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.GioiTinh)*@
+            Giới tính
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GioiTinh)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.TaiKhoan)*@
+            Tài khoản
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaiKhoan)
+        </dd>
+
+        <dt>
+            @*@Html.DisplayNameFor(model => model.MatKhau)*@
+            Mật khẩu
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatKhau)
+        </dd>
+
+        <!--<dt>-->
+        @*@Html.DisplayNameFor(model => model.LaAdmin)*@
+
+        <!--</dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LaAdmin)
+        </dd>-->
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Chỉnh sửa thông tin công nhân", "Edit", new { id = Model.MaCongNhan }) |
+    @Html.ActionLink("Quay lại", "Index", "CongNhanController", new { @class = "btn btn-primary" })
+</p>
